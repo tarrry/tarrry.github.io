@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Maintenance</title>
+    <style>
+        body {
+            text-align: center;
+            padding: 150px;
+            background-color: #f4f4f4;
+            font-family: 'Helvetica', sans-serif;
+            color: #333;
+        }
+        h1 {
+            font-size: 50px;
+            color: #ED6291;
+            margin-bottom: 30px;
+            animation: fadeIn 1s ease-in-out;
+        }
+        article {
+            display: block;
+            text-align: left;
+            width: 80%;
+            max-width: 650px;
+            margin: 0 auto;
+            animation: slideIn 1s ease-in-out;
+        }
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        a {
+            color: #ED6291;
+            text-decoration: none;
+        }
+        a:hover {
+            color: #333;
+            text-decoration: underline;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes slideIn {
+            from { transform: translateY(-20px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <article>
+        <h1>We&rsquo;ll be back soon!</h1>
+        <div>
+            <p>Sorry for the inconvenience, but we&rsquo;re performing some maintenance at the moment. We&rsquo;ll be back online shortly!</p>
+            <p>&mdash; The Team</p>
+        </div>
+    </article>
+</body>
+</html>
