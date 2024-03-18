@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="icon" href="https://www.freepnglogos.com/uploads/pencil-png/pencil-png-transparent-png-pictures-icons-and-png-2.png" type="image/png">
+  <style>
+    body {
+      background: linear-gradient(45deg, #b5f6ff, #f0b5ff);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      transition: background-color 2s ease;
+    }
+
+    #myButton {
+      background-color: #b5f6ff;
+      color: black;
+      font-size: 16px;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 20px;
+      cursor: pointer;
+      outline: none;
+      margin-top: 10px;
+      transition: opacity 1s ease;
+    }
+
+    #myButton:hover {
+      background-color: #f0b5ff;
+    }
+
+    #label {
+      font-size: 24px;
+      margin-bottom: 10px;
+      font-family: Arial, sans-serif;
+      transition: opacity 1s ease;
+    }
+
+    #myIframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+  </style>
+</head>
+<body>
+  <title>2Doodle</title>
+  <label id="label">2Doodle</label>
+  <button id="myButton" onclick="fadeBackground()">Draw! 👉</button>
+  <button id="resetButton" onclick="resetBackground()" class="fade-in" style="display: none; position: absolute; top: 10px; left: 10px; background-color: #b5f6ff; color: black; font-size: 16px; padding: 10px 25px; border: none; border-radius: 20px; cursor: pointer; outline: none;" disabled>Back</button>
+  <div id="myIframe" style="display: none;"></div>
+  <script>
+    function fadeBackground() {
+      document.getElementById("label").style.opacity = "0";
+      document.getElementById("myButton").style.opacity = "0";
+      document.getElementById("resetButton").style.display = "block";
+      document.getElementById("resetButton").disabled = false;
+      var bodyElement = document.querySelector("body");
+      bodyElement.style.background = "white";
+      bodyElement.style.transition = "background 2s ease";
+      document.getElementById("myIframe").style.display = "block";
+    }
+
+    function resetBackground() {
+      document.getElementById("label").style.opacity = "1";
+      document.getElementById("myButton").style.opacity = "1";
+      document.getElementById("resetButton").style.display = "none";
+      document.getElementById("resetButton").disabled = true;
+      var bodyElement = document.querySelector("body");
+      bodyElement.style.background = "linear-gradient(45deg, #b5f6ff, #f0b5ff)";
+      bodyElement.style.transition = "background 2s ease";
+      document.getElementById("myIframe").style.display = "none";
+    }
+  </script>
+</body>
+</html>
