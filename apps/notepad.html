@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>t4rrry's Notepad</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        textarea {
+            width: 100%;
+            height: 400px;
+            padding: 10px;
+            box-sizing: border-box;
+            margin-top: 20px;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>WebNot</h1>
+    <textarea id="notepad"></textarea>
+    <button onclick="saveNote()">Save</button>
+
+    <script>
+        function saveNote() {
+            var note = document.getElementById("notepad").value;
+            localStorage.setItem("note", note);
+            alert("Note saved!");
+        }
+
+        // Load saved note when the page is loaded
+        window.onload = function() {
+            var savedNote = localStorage.getItem("note");
+            if (savedNote) {
+                document.getElementById("notepad").value = savedNote;
+            }
+        };
+    </script>
+</body>
+</html>
