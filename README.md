@@ -1,3 +1,5 @@
 # **TODO**
-- Home screen
-- Online notepad
+- ~~Home screen~~
+- ~~Online notepad~~
+- Online Whiteboard
+- 
