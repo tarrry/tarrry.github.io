@@ -14,7 +14,7 @@ body, html {
 
 
 .HomeButton {
-  bottom: 20px;
+  bottom: calc(20px + 48px + 10px);
   right: 20px; 
   z-index: 999;
   align-items: center;
@@ -62,7 +62,7 @@ body, html {
 }
 
 .ResetButton {
-  bottom: calc(20px + 48px + 10px);
+  bottom: 20px;
   right: 20px; 
   z-index: 999;
   align-items: center;
