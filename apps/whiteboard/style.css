@@ -14,7 +14,7 @@ body, html {
 
 
 .HomeButton {
-  bottom: 20px
+  bottom: 20px;
   right: 20px; 
   z-index: 999;
   align-items: center;
