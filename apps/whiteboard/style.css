@@ -11,3 +11,10 @@ body, html {
 	cursor: crosshair;
     position: fixed;
 }
+
+.HomeButton {
+    position: fixed;
+    bottom: 20px; /* Adjust as needed */
+    right: 20px; /* Adjust as needed */
+    z-index: 999; /* Ensure it appears above other content */
+}
