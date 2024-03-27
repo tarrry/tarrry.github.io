@@ -62,9 +62,9 @@ body, html {
 }
 
 .ResetButton {
-  bottom: 10px;
-  right: -20px; 
-  z-index: 999;
+  bottom: 20px;
+  right: 20px; 
+  z-index: 899;
   align-items: center;
   appearance: none;
   background-image: radial-gradient(100% 100% at 100% 0, #5adaff 0, #5468ff 100%);
