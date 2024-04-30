@@ -5,6 +5,36 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Home Screen</title>
 <style>
+
+.scroll-left {
+  height: 50px;	
+  overflow: hidden;
+  position: relative;
+  background: linear-gradient(to right, #ffec61, #ffab40); /* Fancy gradient background */
+  color: #ff7043; /* Orange text color */
+  border: 2px solid #ffab40; /* Orange border */
+  border-radius: 10px; /* Rounded corners */
+}
+
+.scroll-left p {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  line-height: 50px;
+  text-align: center;
+  /* Starting position */
+  transform: translateX(100%);
+  /* Apply animation to this element */
+  animation: scroll-left 15s linear infinite;
+}
+
+/* Move it (define the animation) */
+@keyframes scroll-left {
+  0%   { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+}
+  
 .button-30 {
   align-items: center;
   appearance: none;
@@ -52,7 +82,10 @@
 </style>
 </head>
 <body>
-    <h> </h>
+  <h>Released Apps</h>
+    <div class="scroll-left">
+      <p>Leave here else gay. (Unless Owner) </p>
+    </div>
   <button class="button-30" onclick="location.href='https://tarrry.github.io/apps/whiteboard/index.html'">Whiteboard</button>
   <button class="button-30" onclick="location.href='https://tarrry.github.io/apps/notepad.html'">Notepad</button>
 </body>
