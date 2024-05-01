@@ -5,25 +5,25 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Home Screen</title>
 <style>
-
 .p {
   font-family: "JetBrains Mono",monospace;
 }
 
-.h {
-  font-size:18px
+.h1 {
+  font-size: 24px;
   font-family: "JetBrains Mono",monospace;
+  margin-bottom: 20px;
 }
   
 .scroll-left {
-  height: 50px;	
+  height: 50px;  
   overflow: hidden;
   position: relative;
   font-family: "JetBrains Mono",monospace;
-  background: radial-gradient(100% 100% at 100% 0, #5adaff 0, #5468ff 100%); /* Fancy gradient background */
+  background: radial-gradient(100% 100% at 100% 0, #5adaff 0, #5468ff 100%);
   color: #ffffff;
   border: 2px solid #ffffff;
-  border-radius: 10px; /* Rounded corners */
+  border-radius: 10px;
 }
 
 .scroll-left p {
@@ -33,20 +33,17 @@
   margin: 0;
   line-height: 50px;
   text-align: center;
-  /* Starting position */
   transform: translateX(100%);
-  /* Apply animation to this element */
   animation: scroll-left 15s linear infinite;
 }
 
-/* Move it (define the animation) */
 @keyframes scroll-left {
   0%   { transform: translateX(100%); }
   100% { transform: translateX(-100%); }
 }
   
 .button-30 {
-  text-align:justify;
+  text-align: justify;
   align-items: center;
   appearance: none;
   background-color: #FCFCFD;
@@ -75,6 +72,7 @@
   white-space: nowrap;
   will-change: box-shadow,transform;
   font-size: 18px;
+  margin-right: 10px; /* Adjust the spacing between buttons */
 }
 
 .button-30:focus {
@@ -93,9 +91,9 @@
 </style>
 </head>
 <body>
-  <h>Released Apps</h>
+  <h1>Released Apps</h1>
     <div class="scroll-left">
-      <p>Leave here else gay. (Unless Owner) </p>
+      <p>Leave here else gay. (Unless Owner)</p>
     </div>
   <button class="button-30" onclick="location.href='https://tarrry.github.io/apps/whiteboard/index.html'">Whiteboard</button>
   <button class="button-30" onclick="location.href='https://tarrry.github.io/apps/notepad.html'">Notepad</button>
